@@ -1,0 +1,62 @@
+task: trapdoor
+device: 1
+random_seed: 123
+
+dataset_info: {
+  "dataset": cifar10,
+  "img_shape": [32, 32, 3],
+  "num_classes": 10,
+  "load_with_keras": True,
+  "data_augmentation": True
+}
+
+training_setting: {
+  "epochs": 100,
+  "batch_size": 32,
+  "accept_clean_acc": 0.85,
+  "accept_trapdoor_acc": 0.97
+}
+
+trapdoor_setting: {
+  "target_list": [0],
+  "n_trapdoor_per_label": 1,
+  "transparency": 0.1,
+  "size": 6,
+  "n_pieces": 1
+}
+
+injection_ratio: 0.1
+target_layer: flatten_1
+eval_batch_size: 1024
+random_sampling_ratio: 1.0
+
+attack_setting: {
+  "ProjectedGradientDescent": {
+    "eps": 8.0,
+    "eps_iter": 0.1,
+    "nb_iter": 100,
+    "clip_min": 0.0,
+    "clip_max": 255.0
+  },
+  "CarliniWagnerL2": {
+    "binary_search_steps": 9,
+    "max_iterations": 1000,
+    "learning_rate": 0.05,
+    "abort_early": 1,
+    "clip_min": 0.0,
+    "clip_max": 255.0,
+    "initial_const": 0.001,
+    "confidence": 10.0
+  },
+  "FeatureIndistinguishableAttack": {
+    "eps": 8.0,
+    "eps_iter": 0.05,
+    "nb_iter": 5000,
+    "clip_min": 0.0,
+    "clip_max": 255.0,
+    "target_layer": "flatten_1",
+    "recall": True,
+    "query_batch_size": 32,
+    "evade": True
+  }
+}
