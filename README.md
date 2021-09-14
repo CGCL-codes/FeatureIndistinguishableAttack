@@ -8,7 +8,7 @@ Implementation of our ACM CCS 2021 paper "Feature Indistinguishable Attack to Ci
 - cleverhans=3.0.1
 
 ## Quick Start
-You can set the all configurations (including dataset & attacks & trapdoor-enable defense & training settings) with yaml file in directory 'configs/dataset', where single trapdoor single category configurations of mnist and cifar10 are given by default.
+You can set all configurations (including dataset & attacks & trapdoor-enable defense & training settings) with yaml file in directory 'configs/dataset', where single trapdoor single category configurations of mnist and cifar10 are given by default.
 
 To run the code:
 
