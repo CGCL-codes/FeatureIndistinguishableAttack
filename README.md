@@ -1,5 +1,5 @@
 # FeatureIndistinguishableAttack
-Implementation of our ACM CCS 2021 paper "Feature Indistinguishable Attack to Circumvent Trapdoor-enabled Defense".
+Implementation of our ACM CCS 2021 paper "Feature-Indistinguishable Attack to Circumvent Trapdoor-enabled Defense".
 
 ## Requirements
 - python=3.8.5
