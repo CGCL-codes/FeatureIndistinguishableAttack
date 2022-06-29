@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This repository contains the code that implements the *Feature-Indistinguishable Attack* (*FIA*) described in our paper ["Feature-Indistinguishable Attack to Circumvent Trapdoor-Enabled Defense"](https://www.researchgate.net/publication/356203154_Feature-Indistinguishable_Attack_to_Circumvent_Trapdoor-Enabled_Defense) published at ACM CCS 2021. FIA aims to craft adversarial examples indistinguishable in the feature (i.e., neuron-activation) space from benign examples in the target category. It can successfully circumvent the [Trapdoor-enabled Defense](https://github.com/Shawn-Shan/trapdoor) proposed in the paper ``Gotta Catch’Em All: Using Honeypots to Catch Adversarial Attacks on Neural Networks" published at ACM CCS 2020. FIA opens a door for developing much more powerful adversarial attacks.
+This repository contains the code that implements the *Feature-Indistinguishable Attack* (*FIA*) described in our paper ["Feature-Indistinguishable Attack to Circumvent Trapdoor-Enabled Defense"](https://dl.acm.org/doi/10.1145/3460120.3485378) published at ACM CCS 2021. FIA aims to craft adversarial examples indistinguishable in the feature (i.e., neuron-activation) space from benign examples in the target category. It can successfully circumvent the [Trapdoor-enabled Defense](https://github.com/Shawn-Shan/trapdoor) proposed in the paper ``Gotta Catch’Em All: Using Honeypots to Catch Adversarial Attacks on Neural Networks" published at ACM CCS 2020. FIA opens a door for developing much more powerful adversarial attacks.
 
 ## Requirements
 
@@ -37,3 +37,5 @@ If you are using our code for research purpose, please cite our paper.
   url       = {https://doi.org/10.1145/3460120.3485378}
 }
 ```
+## Paper's Link
+Our paper and presentation video can be downloaded [here](https://dl.acm.org/doi/10.1145/3460120.3485378). The paper can also be downloaded [here](https://www.researchgate.net/publication/356203154_Feature-Indistinguishable_Attack_to_Circumvent_Trapdoor-Enabled_Defense).
